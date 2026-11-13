@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Шкатулка
+GenericName=Сейф паролей и карт
+Comment=Локальное шифрованное хранилище паролей и данных банковских карт
+Exec=shkatulka
+Icon=io.github.shkatulka.Shkatulka
+Terminal=false
+Categories=Utility;Security;
+Keywords=password;wallet;vault;карты;пароли;сейф;
+StartupNotify=true
+StartupWMClass=io.github.shkatulka.Shkatulka

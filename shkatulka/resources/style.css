@@ -1,0 +1,108 @@
+/* Shkatulka — minimal visual layer on top of libadwaita. */
+
+.card-box {
+  background-color: @card_bg_color;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.hero-title {
+  font-size: 1.7em;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.02em;
+}
+
+.error-label {
+  color: @error_color;
+  font-size: 0.92em;
+}
+
+.warning-label {
+  color: @warning_color;
+  font-size: 0.92em;
+}
+
+.mono {
+  font-family: monospace;
+  font-size: 1.05em;
+}
+
+.secret-value {
+  font-family: monospace;
+  font-size: 1.05em;
+  letter-spacing: 0.02em;
+}
+
+.strength-segment {
+  min-height: 5px;
+  border-radius: 3px;
+  background-color: alpha(currentColor, 0.14);
+  transition: background-color 120ms ease;
+}
+
+.strength-segment.filled.weak {
+  background-color: #e01b24;
+}
+
+.strength-segment.filled.fair {
+  background-color: #e5a50a;
+}
+
+.strength-segment.filled.good {
+  background-color: #2ec27e;
+}
+
+.strength-segment.filled.strong {
+  background-color: #26a269;
+}
+
+.tag-pill {
+  background-color: alpha(currentColor, 0.09);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.84em;
+}
+
+.item-icon {
+  background-color: alpha(@accent_color, 0.13);
+  border-radius: 999px;
+  padding: 9px;
+  color: @accent_color;
+}
+
+.detail-title {
+  font-size: 1.55em;
+  font-weight: 800;
+}
+
+.empty-note {
+  padding: 18px;
+}
+
+.pill-button {
+  border-radius: 999px;
+}
+
+.copy-feedback {
+  color: @success_color;
+}
+
+.search-entry {
+  margin: 6px 12px 8px 12px;
+}
+
+.sidebar-footer {
+  padding: 6px 18px 10px 18px;
+  font-size: 0.85em;
+}
+
+.preferences-note {
+  font-size: 0.9em;
+}
+
+.vault-locked-icon {
+  opacity: 0.9;
+}

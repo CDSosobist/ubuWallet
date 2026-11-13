@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shkatulka"
+version = "1.1.0"
+description = "Локальный сейф паролей и данных банковских карт для Ubuntu"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Shkatulka contributors" }]
+keywords = ["password-manager", "vault", "gtk4", "libadwaita", "security"]
+classifiers = [
+  "Environment :: X11 Applications :: GTK",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Utilities",
+]
+dependencies = [
+  "cryptography>=41",
+  "argon2-cffi>=23.1",
+]
+
+[project.optional-dependencies]
+test = []
+
+[project.scripts]
+shkatulka = "shkatulka.app:main"
+
+[tool.setuptools]
+packages = ["shkatulka", "shkatulka.ui"]
+
+[tool.setuptools.package-data]
+shkatulka = [
+  "resources/*.css",
+  "resources/*.svg",
+  "resources/icons/hicolor/scalable/apps/*.svg",
+]
